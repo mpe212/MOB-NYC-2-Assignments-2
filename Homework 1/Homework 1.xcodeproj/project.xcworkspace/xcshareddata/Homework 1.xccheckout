@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FA471044-2916-47AB-881B-DF69C9A4AA8E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Homework 1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>21E8955AB0D38822AB333135A5C814757E26C986</key>
+		<string>https://github.com/mpe212/MOB-NYC-2-Assignments.git</string>
+		<key>49310011A395C33657D93B0043184DE98E66268B</key>
+		<string>https://github.com/mpe212/MOB-NYC-2-Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Homework 1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>21E8955AB0D38822AB333135A5C814757E26C986</key>
+		<string>../..</string>
+		<key>49310011A395C33657D93B0043184DE98E66268B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mpe212/MOB-NYC-2-Assignments.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>21E8955AB0D38822AB333135A5C814757E26C986</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>49310011A395C33657D93B0043184DE98E66268B</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>21E8955AB0D38822AB333135A5C814757E26C986</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Homework%201</string>
+		</dict>
+	</array>
+</dict>
+</plist>
