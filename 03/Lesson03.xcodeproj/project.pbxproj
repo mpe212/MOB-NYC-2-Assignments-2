@@ -14,6 +14,9 @@
 		5DCED99F19D8DC9B00DE1DC2 /* Lesson03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED99E19D8DC9B00DE1DC2 /* Lesson03Tests.swift */; };
 		5DCED9A919D8DF0800DE1DC2 /* ArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9A819D8DF0800DE1DC2 /* ArrayTableViewController.swift */; };
 		5DCED9AB19D8DF4E00DE1DC2 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9AA19D8DF4E00DE1DC2 /* Animal.swift */; };
+		D05C6F131AAAB2FF00E810CE /* IMG_0040.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D05C6F121AAAB2FF00E810CE /* IMG_0040.JPG */; };
+		D0C01C581AABBC1500989287 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C01C571AABBC1500989287 /* DestinationViewController.swift */; };
+		D0C3E18A1AACE2CB008684FA /* AnimalSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C3E1891AACE2CB008684FA /* AnimalSubclass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		5DCED99E19D8DC9B00DE1DC2 /* Lesson03Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson03Tests.swift; sourceTree = "<group>"; };
 		5DCED9A819D8DF0800DE1DC2 /* ArrayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewController.swift; sourceTree = "<group>"; };
 		5DCED9AA19D8DF4E00DE1DC2 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		D05C6F121AAAB2FF00E810CE /* IMG_0040.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0040.JPG; sourceTree = "<group>"; };
+		D0C01C571AABBC1500989287 /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DestinationViewController.swift; path = ../DestinationViewController.swift; sourceTree = "<group>"; };
+		D0C3E1891AACE2CB008684FA /* AnimalSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalSubclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		5DCED97A19D8DC9B00DE1DC2 = {
 			isa = PBXGroup;
 			children = (
+				D05C6F121AAAB2FF00E810CE /* IMG_0040.JPG */,
 				5DCED98519D8DC9B00DE1DC2 /* Lesson03 */,
 				5DCED99B19D8DC9B00DE1DC2 /* Lesson03Tests */,
 				5DCED98419D8DC9B00DE1DC2 /* Products */,
@@ -81,8 +88,10 @@
 			children = (
 				5DCED9A819D8DF0800DE1DC2 /* ArrayTableViewController.swift */,
 				5DCED9AA19D8DF4E00DE1DC2 /* Animal.swift */,
+				D0C3E1891AACE2CB008684FA /* AnimalSubclass.swift */,
 				5DCED98819D8DC9B00DE1DC2 /* AppDelegate.swift */,
 				5DCED98A19D8DC9B00DE1DC2 /* ViewController.swift */,
+				D0C01C571AABBC1500989287 /* DestinationViewController.swift */,
 				5DCED98C19D8DC9B00DE1DC2 /* Main.storyboard */,
 				5DCED98F19D8DC9B00DE1DC2 /* Images.xcassets */,
 				5DCED98619D8DC9B00DE1DC2 /* Supporting Files */,
@@ -195,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05C6F131AAAB2FF00E810CE /* IMG_0040.JPG in Resources */,
 				5DCED98E19D8DC9B00DE1DC2 /* Main.storyboard in Resources */,
 				5DCED99019D8DC9B00DE1DC2 /* Images.xcassets in Resources */,
 			);
@@ -215,9 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DCED9A919D8DF0800DE1DC2 /* ArrayTableViewController.swift in Sources */,
+				D0C3E18A1AACE2CB008684FA /* AnimalSubclass.swift in Sources */,
 				5DCED9AB19D8DF4E00DE1DC2 /* Animal.swift in Sources */,
 				5DCED98B19D8DC9B00DE1DC2 /* ViewController.swift in Sources */,
 				5DCED98919D8DC9B00DE1DC2 /* AppDelegate.swift in Sources */,
+				D0C01C581AABBC1500989287 /* DestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +413,7 @@
 				5DCED9A419D8DC9B00DE1DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DCED9A519D8DC9B00DE1DC2 /* Build configuration list for PBXNativeTarget "Lesson03Tests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +422,7 @@
 				5DCED9A719D8DC9B00DE1DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
