@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>94F70924-3577-4724-ABB9-4AEFF074CE4E</string>
+	<string>01CBCCF3-9B93-4011-8839-95D1C08795D4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Lesson01</string>
+	<string>Self-starter</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8FD59669C75A40FF2FA6EC1C21D3C628AE00C9D8</key>
-		<string>https://github.com/mpe212/MOB-NYC-2-Assignments.git</string>
+		<string>https://github.com/mpe212/MOB-NYC-2-Assignments-2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>01/Lesson01.xcodeproj</string>
+	<string>Self-starter/Self-starter.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8FD59669C75A40FF2FA6EC1C21D3C628AE00C9D8</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mpe212/MOB-NYC-2-Assignments.git</string>
+	<string>https://github.com/mpe212/MOB-NYC-2-Assignments-2.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
