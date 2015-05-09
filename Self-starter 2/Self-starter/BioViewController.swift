@@ -12,11 +12,15 @@ class BioViewController: UIViewController {
 
     
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var age: UITextField!
     @IBOutlet weak var feet: UITextField!
     @IBOutlet weak var inches: UITextField!
     @IBOutlet weak var lbs: UITextField!
     
+    var result: Int = 0
+    
+    @IBAction func doneClicked(sender: AnyObject) {
+        result =  bmiCalc()
+    }
     
     let storage = NSUserDefaults.standardUserDefaults()
     
@@ -36,46 +40,24 @@ class BioViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toWorkout" {
             storage.setValue(nameField.text, forKey: "nameVal")
+            storage.setValue(result, forKey: "bmiVal")
             
             var destinationVC = segue.destinationViewController as! EntryViewController
             destinationVC.passedInName = nameField.text
+            destinationVC.passedInBmi = result
         }
     }
     
-    func bmiCalc() {
+    func bmiCalc() -> Int {
         let ft = feet.text.toInt()
         let inch = inches.text.toInt()
         let weight = lbs.text.toInt()
         
         let height = (ft! * 12) + inch!
         
-        let bmi = (weight! * 703)/(height*height)
+        let bmi: Int = (weight! * 703)/(height*height)
         
+        return bmi
     }
     
-//    func levelCalc() {
-//        
-//        if bmi < 18.5" {
-//        var result = "you are "
-//    }
-//                                        //underweight
-//        case 2: 18.5 < bmi < 24.9      //normal weight
-//        case 3: 25 < bmi < 29.9     //overweight
-//        case 4: bmi > 29            //obese
-//
-//        }
-//    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-
 }
