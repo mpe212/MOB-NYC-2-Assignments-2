@@ -22,6 +22,7 @@ class ViewController:  UIViewController, UITableViewDataSource, UITableViewDeleg
         super.viewDidLoad()
     }
     
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exercises.count
     }

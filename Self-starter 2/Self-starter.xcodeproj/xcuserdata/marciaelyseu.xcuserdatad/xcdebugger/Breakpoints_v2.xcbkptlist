@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Self-starter/BioViewController.swift"
-            timestampString = "452692463.525023"
+            timestampString = "452740040.58229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "BioViewController"
             landmarkType = "3">
          </BreakpointContent>

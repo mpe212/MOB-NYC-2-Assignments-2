@@ -18,28 +18,25 @@ class BioViewController: UIViewController {
     @IBOutlet weak var lbs: UITextField!
     
     
-    let nameValue = NSUserDefaults.standardUserDefaults()
+    let storage = NSUserDefaults.standardUserDefaults()
+    
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        
-        updateName()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateName", name:NSUserDefaultsDidChangeNotification, object: nil)
-        
-        nameValue.setValue(nameField.text, forKey: "name_preference")
-        
-        let name = nameValue.stringForKey("nameVal")
-    }
-    
-    func updateName(){
-        let name = nameValue.stringForKey("name_preference")
-        
-        nameField.text = name
+       
+        if let name = storage.objectForKey("nameVal") as? String{
+            println("has value")
+            nameField.text = name
+        } else {
+            println("empty")
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toWorkout" {
+            storage.setValue(nameField.text, forKey: "nameVal")
+            
             var destinationVC = segue.destinationViewController as! EntryViewController
             destinationVC.passedInName = nameField.text
         }
@@ -69,11 +66,6 @@ class BioViewController: UIViewController {
 //        }
 //    }
     
-    @IBAction func registeredAccount(sender: AnyObject) {
-     
-     //   nameVal = nameField.text
-     //  NSUserDefaults.standardUserDefaults().setObject(nameValue, forKey: name_preference)
-    }
 
     /*
     // MARK: - Navigation
