@@ -59,4 +59,11 @@ class EntryViewController: UIViewController {
             self.infoLabel.text = "Sorry... unable to compute result!"
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetail" {
+            var destinationVC = segue.destinationViewController as! DetailViewController
+             //   destinationVC.passedInNewBmi = passedInBmi
+        }
+    }
 }

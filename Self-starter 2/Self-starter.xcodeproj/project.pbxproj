@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88D04F1F1AF905C700BCE5E5 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D04F1E1AF905C700BCE5E5 /* Exercise.swift */; };
-		D033BE391AFEC21C0080D42B /* ExerciseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033BE381AFEC21C0080D42B /* ExerciseTypes.swift */; };
+		88D04F1F1AF905C700BCE5E5 /* ExerciseItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D04F1E1AF905C700BCE5E5 /* ExerciseItems.swift */; };
+		D033BE3B1AFED2BF0080D42B /* ExerciseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033BE3A1AFED2BF0080D42B /* ExerciseType.swift */; };
+		D033BE3D1AFEE9660080D42B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033BE3C1AFEE9660080D42B /* Exercise.swift */; };
 		D060A7781AEC49F00033825C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D060A7771AEC49F00033825C /* AppDelegate.swift */; };
 		D060A77B1AEC49F10033825C /* Self_starter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D060A7791AEC49F10033825C /* Self_starter.xcdatamodeld */; };
 		D060A77D1AEC49F10033825C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D060A77C1AEC49F10033825C /* ViewController.swift */; };
@@ -35,8 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		88D04F1E1AF905C700BCE5E5 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		D033BE381AFEC21C0080D42B /* ExerciseTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTypes.swift; sourceTree = "<group>"; };
+		88D04F1E1AF905C700BCE5E5 /* ExerciseItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseItems.swift; sourceTree = "<group>"; };
+		D033BE3A1AFED2BF0080D42B /* ExerciseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseType.swift; sourceTree = "<group>"; };
+		D033BE3C1AFEE9660080D42B /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D060A7721AEC49F00033825C /* Self-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Self-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D060A7761AEC49F00033825C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D060A7771AEC49F00033825C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,12 +100,13 @@
 				D060A7771AEC49F00033825C /* AppDelegate.swift */,
 				D060A77C1AEC49F10033825C /* ViewController.swift */,
 				D060A77E1AEC49F10033825C /* Main.storyboard */,
-				D033BE381AFEC21C0080D42B /* ExerciseTypes.swift */,
+				D033BE3A1AFED2BF0080D42B /* ExerciseType.swift */,
 				D0CD12481AFD90BD00AB058F /* WelcomeViewController.swift */,
 				D0BF27681AFB88170045C03F /* EntryViewController.swift */,
 				D0D1922B1AFAC735006A5EC4 /* BioViewController.swift */,
 				D060A79C1AEC72BC0033825C /* DetailViewController.swift */,
-				88D04F1E1AF905C700BCE5E5 /* Exercise.swift */,
+				88D04F1E1AF905C700BCE5E5 /* ExerciseItems.swift */,
+				D033BE3C1AFEE9660080D42B /* Exercise.swift */,
 				D060A79A1AEC6D590033825C /* TableViewCell.swift */,
 				D060A7811AEC49F10033825C /* Images.xcassets */,
 				D0CD12461AFD907800AB058F /* sunshine.jpg */,
@@ -244,12 +247,13 @@
 				D0D1922C1AFAC735006A5EC4 /* BioViewController.swift in Sources */,
 				D060A77D1AEC49F10033825C /* ViewController.swift in Sources */,
 				D060A79D1AEC72BC0033825C /* DetailViewController.swift in Sources */,
+				D033BE3B1AFED2BF0080D42B /* ExerciseType.swift in Sources */,
 				D060A79B1AEC6D590033825C /* TableViewCell.swift in Sources */,
-				D033BE391AFEC21C0080D42B /* ExerciseTypes.swift in Sources */,
+				D033BE3D1AFEE9660080D42B /* Exercise.swift in Sources */,
 				D060A7781AEC49F00033825C /* AppDelegate.swift in Sources */,
 				D0BF27691AFB88170045C03F /* EntryViewController.swift in Sources */,
 				D060A77B1AEC49F10033825C /* Self_starter.xcdatamodeld in Sources */,
-				88D04F1F1AF905C700BCE5E5 /* Exercise.swift in Sources */,
+				88D04F1F1AF905C700BCE5E5 /* ExerciseItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
