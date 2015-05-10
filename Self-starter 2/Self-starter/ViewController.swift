@@ -117,16 +117,23 @@ class ViewController:  UIViewController, UITableViewDataSource, UITableViewDeleg
         return cell
     }
 
-/*
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.destinationViewController is DetailViewController {
             var detailVC = segue.destinationViewController as! DetailViewController
-            if let selectedIndexPath = tableView.indexPathForSelectedRow() {
-                let selectedExercise = exercises[selectedIndexPath.row]
-               detailVC.exercise = selectedExercise
+            
+            if let indexPath = tableView.indexPathForSelectedRow() {
+                
+                let currentSectionTitle = sectionTitles[indexPath.section]
+                
+                let currentArrayOfDictionary = exercises[currentSectionTitle]!
+                
+                let exerciseObject = currentArrayOfDictionary[indexPath.row] as Exercise
+                
+               detailVC.exercise = exerciseObject
             }
         }
-    }*/
+    }
     
 }
 
