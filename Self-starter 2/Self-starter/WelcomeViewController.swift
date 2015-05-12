@@ -10,14 +10,25 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    @IBOutlet weak var initialImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        fadeInImage()
+    }
+    
         
-       // self.view.backgroundColor = UIColor(red: <#CGFloat#>, green: <#CGFloat#>, blue: <#CGFloat#>, alpha: <#CGFloat#>)
+  /*  @IBAction func showImage(sender: AnyObject) {
+            fadeInImage()
+        }*/
+        
+        func fadeInImage() {
+            initialImage.alpha = 0
             
-            //UIColor(patternImage: UIImage(named: "sunshine.jpg")!)
-
-        // Do any additional setup after loading the view.
+            initialImage.image = UIImage(named: "sunshine.jpg")
+            UIView.animateWithDuration(3, animations: {
+                self.initialImage.alpha = 1
+            })
     }
 
 

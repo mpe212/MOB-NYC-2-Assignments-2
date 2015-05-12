@@ -90,6 +90,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3WZ-CG-Bj3"/>
+                    <connections>
+                        <outlet property="initialImage" destination="W2x-F9-NpK" id="UGk-xn-JXl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EN6-i2-idU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
