@@ -30,21 +30,37 @@ class BioViewController: UIViewController {
         super.viewDidLoad()
        
         if let name = storage.objectForKey("nameVal") as? String{
-            println("has value")
             nameField.text = name
-        } else {
-            println("empty")
         }
+        
+        if let name = storage.objectForKey("ftVal") as? String{
+            feet.text = name
+        }
+        
+        if let name = storage.objectForKey("InchVal") as? String{
+            inches.text = name
+        }
+        
+        if let name = storage.objectForKey("lbsVal") as? String{
+            lbs.text = name
+        }
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toWorkout" {
             storage.setValue(nameField.text, forKey: "nameVal")
             storage.setValue(result, forKey: "bmiVal")
+            storage.setValue(feet.text, forKey: "ftVal")
+            storage.setValue(inches.text, forKey: "InchVal")
+            storage.setValue(lbs.text, forKey: "lbsVal")
             
             var destinationVC = segue.destinationViewController as! EntryViewController
             destinationVC.passedInName = nameField.text
             destinationVC.passedInBmi = result
+            destinationVC.passedInFeet = feet.text.toInt()!
+            destinationVC.passedInInches = inches.text.toInt()!
+            destinationVC.passedInPounds = lbs.text.toInt()!
         }
     }
     

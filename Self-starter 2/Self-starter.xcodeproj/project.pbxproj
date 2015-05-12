@@ -17,8 +17,8 @@
 		D060A7821AEC49F10033825C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D060A7811AEC49F10033825C /* Images.xcassets */; };
 		D060A7851AEC49F10033825C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D060A7831AEC49F10033825C /* LaunchScreen.xib */; };
 		D060A7911AEC49F10033825C /* Self_starterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D060A7901AEC49F10033825C /* Self_starterTests.swift */; };
-		D060A79B1AEC6D590033825C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D060A79A1AEC6D590033825C /* TableViewCell.swift */; };
 		D060A79D1AEC72BC0033825C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D060A79C1AEC72BC0033825C /* DetailViewController.swift */; };
+		D06819371B01882700B583E5 /* MyCellClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06819361B01882700B583E5 /* MyCellClassTableViewCell.swift */; };
 		D0BF27691AFB88170045C03F /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF27681AFB88170045C03F /* EntryViewController.swift */; };
 		D0CD12471AFD907800AB058F /* sunshine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CD12461AFD907800AB058F /* sunshine.jpg */; };
 		D0CD12491AFD90BD00AB058F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD12481AFD90BD00AB058F /* WelcomeViewController.swift */; };
@@ -50,8 +50,8 @@
 		D060A78A1AEC49F10033825C /* Self-starterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Self-starterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D060A78F1AEC49F10033825C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D060A7901AEC49F10033825C /* Self_starterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Self_starterTests.swift; sourceTree = "<group>"; };
-		D060A79A1AEC6D590033825C /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D060A79C1AEC72BC0033825C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D06819361B01882700B583E5 /* MyCellClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCellClassTableViewCell.swift; path = ../MyCellClassTableViewCell.swift; sourceTree = "<group>"; };
 		D0BF27681AFB88170045C03F /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		D0CD12461AFD907800AB058F /* sunshine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunshine.jpg; sourceTree = "<group>"; };
 		D0CD12481AFD90BD00AB058F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +97,7 @@
 		D060A7741AEC49F00033825C /* Self-starter */ = {
 			isa = PBXGroup;
 			children = (
+				D06819361B01882700B583E5 /* MyCellClassTableViewCell.swift */,
 				D060A7771AEC49F00033825C /* AppDelegate.swift */,
 				D060A77C1AEC49F10033825C /* ViewController.swift */,
 				D060A77E1AEC49F10033825C /* Main.storyboard */,
@@ -107,7 +108,6 @@
 				D060A79C1AEC72BC0033825C /* DetailViewController.swift */,
 				88D04F1E1AF905C700BCE5E5 /* ExerciseItems.swift */,
 				D033BE3C1AFEE9660080D42B /* Exercise.swift */,
-				D060A79A1AEC6D590033825C /* TableViewCell.swift */,
 				D060A7811AEC49F10033825C /* Images.xcassets */,
 				D0CD12461AFD907800AB058F /* sunshine.jpg */,
 				D060A7831AEC49F10033825C /* LaunchScreen.xib */,
@@ -243,12 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06819371B01882700B583E5 /* MyCellClassTableViewCell.swift in Sources */,
 				D0CD12491AFD90BD00AB058F /* WelcomeViewController.swift in Sources */,
 				D0D1922C1AFAC735006A5EC4 /* BioViewController.swift in Sources */,
 				D060A77D1AEC49F10033825C /* ViewController.swift in Sources */,
 				D060A79D1AEC72BC0033825C /* DetailViewController.swift in Sources */,
 				D033BE3B1AFED2BF0080D42B /* ExerciseType.swift in Sources */,
-				D060A79B1AEC6D590033825C /* TableViewCell.swift in Sources */,
 				D033BE3D1AFEE9660080D42B /* Exercise.swift in Sources */,
 				D060A7781AEC49F00033825C /* AppDelegate.swift in Sources */,
 				D0BF27691AFB88170045C03F /* EntryViewController.swift in Sources */,
