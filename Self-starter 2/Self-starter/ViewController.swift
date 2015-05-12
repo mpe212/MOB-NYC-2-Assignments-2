@@ -66,10 +66,6 @@ class ViewController:  UIViewController, UITableViewDataSource, UITableViewDeleg
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //have section, use section to get dictionary key which is same as section title
-        //use dictionary key to access value of key which is an array of Exercise objects
-        // then count array objects (rows)
-        
         let currentSection = sectionTitles[section]
         
         let arrayValue = exercises[currentSection]

@@ -29,7 +29,6 @@ class EntryViewController: UIViewController {
     
     override func viewDidLoad() {
         messageLabel.text = "Hello \(passedInName)!"
-       // messageLabel.backgroundColor = UIImage:(image:"Sunshine.jpg")
         
         bmiLabel.text = "Your BMI is: \(passedInBmi)!"
         
@@ -67,7 +66,6 @@ class EntryViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toDetail" {
             var destinationVC = segue.destinationViewController as! DetailViewController
-             //   destinationVC.passedInNewBmi = passedInBmi
         }
     }
     

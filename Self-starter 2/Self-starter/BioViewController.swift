@@ -16,14 +16,20 @@ class BioViewController: UIViewController {
     @IBOutlet weak var inches: UITextField!
     @IBOutlet weak var lbs: UITextField!
     
-    var result: Int = 0
-    
-    @IBAction func doneClicked(sender: AnyObject) {
-        result =  bmiCalc()
-    }
-    
     let storage = NSUserDefaults.standardUserDefaults()
-    
+    var result: Int = 0
+
+    @IBAction func showAlert() {
+        
+        var alert = UIAlertController(title: "Forgot Something?", message: "Please enter your information!", preferredStyle: .Alert)
+        
+        let cancel = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel) { (action) -> Void in
+        }
+        
+        alert.addAction(cancel)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         
@@ -47,22 +53,15 @@ class BioViewController: UIViewController {
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toWorkout" {
-            storage.setValue(nameField.text, forKey: "nameVal")
-            storage.setValue(result, forKey: "bmiVal")
-            storage.setValue(feet.text, forKey: "ftVal")
-            storage.setValue(inches.text, forKey: "InchVal")
-            storage.setValue(lbs.text, forKey: "lbsVal")
-            
-            var destinationVC = segue.destinationViewController as! EntryViewController
-            destinationVC.passedInName = nameField.text
-            destinationVC.passedInBmi = result
-            destinationVC.passedInFeet = feet.text.toInt()!
-            destinationVC.passedInInches = inches.text.toInt()!
-            destinationVC.passedInPounds = lbs.text.toInt()!
+    @IBAction func doneClicked(sender: AnyObject) {
+        
+        if (self.feet.text == "" || self.inches.text == "" || self.lbs.text == "" || self.nameField.text == "") {
+            showAlert()
+        } else {
+            result = bmiCalc()
         }
     }
+
     
     func bmiCalc() -> Int {
         let ft = feet.text.toInt()
@@ -76,4 +75,27 @@ class BioViewController: UIViewController {
         return bmi
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toWorkout" {
+            storage.setValue(nameField.text, forKey: "nameVal")
+            storage.setValue(result, forKey: "bmiVal")
+            storage.setValue(feet.text, forKey: "ftVal")
+            storage.setValue(inches.text, forKey: "InchVal")
+            storage.setValue(lbs.text, forKey: "lbsVal")
+            
+            var destinationVC = segue.destinationViewController as! EntryViewController
+            
+            if (feet.text != "" && inches.text != "" && lbs.text != "" && nameField.text != "") {
+                
+            destinationVC.passedInName = nameField.text
+            destinationVC.passedInBmi = result
+            destinationVC.passedInFeet = feet.text.toInt()!
+            destinationVC.passedInInches = inches.text.toInt()!
+            destinationVC.passedInPounds = lbs.text.toInt()!
+            } else {
+                showAlert()
+            }
+        }
+
+    }
 }
